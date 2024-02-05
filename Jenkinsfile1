@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+
+    stages{
+         
+        stage('Git Checkout'){
+            steps{
+            gitCheckout(
+                branch: "main",
+                url: "https://github.com/manisha123github/Java_app__3.0.git"
+            )
+            }
+        }
+
+}
+}
